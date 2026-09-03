@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/images/State-Of-Illinois-Logo.png"
+    />
+    <title>Illinois State Website - Contact Us</title>
+  </head>
+  <body>
+    <header class="main-page-header">
+      <h1>Illinois State Website</h1>
+    </header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="peoria.html">Peoria</a>
+      <a href="chicago.html">Chicago</a>
+      <a href="springfield.html">Springfield</a>
+      <a href="questions.html">Contact Us</a>
+    </nav>
+    <main>
+      <section class="main-content">
+        <img
+          src="../assets/images/State-Of-Illinois-Logo.png"
+          alt="Image of Illinois State Seal"
+          title="Official seal of the State of Illinois"
+          class="illinois-logo contact-logo"
+        />
+        <h2>Contact Page</h2>
+        <br />
+        <p>Submit the form below and a member of the agency will be in touch</p>
+        <div>
+          <form id="contact-us">
+            <div>
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" name="first_name" required />
+            </div>
+            <div>
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" name="last_name" required />
+            </div>
+            <div>
+              <label for="email">Email Address:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="confirm-email">Confirm Email Address:</label>
+              <input
+                type="email"
+                id="confirm-email"
+                name="confirm-email"
+                required
+              />
+            </div>
+            <p id="form-message" role="alert" style="color: red"></p>
+            <div>
+              <label for="question">Your Question:</label>
+              <textarea
+                name="question"
+                id="question"
+                rows="6"
+                cols="40"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" id="submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="../assets/js/confirmemail.js"></script>
+</html>
